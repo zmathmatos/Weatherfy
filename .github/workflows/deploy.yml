@@ -24,7 +24,7 @@ jobs:
         run: npm ci
 
       - name: Build
-        run: npm run build -- --configuration production --base-href "https://zmathmatos.github.io/Weatherfy/"
+        run: npm run build -- --configuration production --base-href "/weatherfy/"
 
       - name: Deploy to GitHub Pages
         if: github.ref == 'refs/heads/main'
